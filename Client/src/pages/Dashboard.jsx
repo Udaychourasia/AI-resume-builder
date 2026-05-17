@@ -34,7 +34,7 @@ const Dashboard = () => {
         if (!user?._id) return;
 
         const response = await axios.get(
-          "http://localhost:5000/api/resume/all"
+          "https://ai-resume-builder-l94l.onrender.com"
         );
 
         setResumes(response.data);
@@ -61,7 +61,7 @@ const Dashboard = () => {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/resume/delete/${id}`
+        `https://ai-resume-builder-l94l.onrender.com/api/resume/delete/${id}`
       );
 
       setResumes(

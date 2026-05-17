@@ -71,7 +71,7 @@ const Resume = () => {
       setError("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/ai/generate-summary",
+        "https://ai-resume-builder-l94l.onrender.com/api/ai/generate-summary",
         {
           role: formData.experience,
           skills: formData.skills,
@@ -110,7 +110,7 @@ const Resume = () => {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:5000/api/ai/check-ats",
+        "https://ai-resume-builder-l94l.onrender.com/api/ai/check-ats",
         {
           skills: formData.skills,
           experience: formData.experience,
@@ -156,7 +156,7 @@ const handleSubmit = async (e) => {
 
       await axios.put(
 
-        `http://localhost:5000/api/resume/update/${editData._id}`,
+        `https://ai-resume-builder-l94l.onrender.com/api/resume/update/${editData._id}`,
 
         {
 
@@ -178,7 +178,7 @@ const handleSubmit = async (e) => {
 
       await axios.post(
 
-        "http://localhost:5000/api/resume/create",
+        "https://ai-resume-builder-l94l.onrender.com/api/resume/create",
 
         {
 
