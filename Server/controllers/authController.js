@@ -47,7 +47,7 @@ const signup = async (req, res) => {
         id: user._id,
       },
 
-      "secretkey",
+      process.env.JWT_SECRET,
 
       {
         expiresIn: "7d",
@@ -121,7 +121,7 @@ const login = async (req, res) => {
         id: user._id,
       },
 
-      "secretkey",
+      process.env.JWT_SECRET,
 
       {
         expiresIn: "7d",
