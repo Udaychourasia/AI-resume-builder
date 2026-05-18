@@ -163,7 +163,9 @@ const Dashboard = () => {
 
         {
 
-          resumes.map((resume) => (
+          Array.isArray(resumes) &&
+
+resumes.map((resume) => (
 
             <div
 
