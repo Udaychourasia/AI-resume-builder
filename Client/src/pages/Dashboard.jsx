@@ -34,8 +34,8 @@ const Dashboard = () => {
         if (!user?._id) return;
 
         const response = await axios.get(
-          "https://ai-resume-builder-l94l.onrender.com"
-        );
+  "https://ai-resume-builder-l94l.onrender.com/api/resume/all"
+);
 
         setResumes(response.data);
 
